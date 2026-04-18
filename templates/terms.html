@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Terms of Service — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-hero">
+    <div class="legal-hero-inner">
+        <div class="hero-badge">Legal</div>
+        <h1 class="legal-title">Terms of <em>Service</em></h1>
+        <p class="legal-meta">Last updated: April 2026</p>
+    </div>
+</section>
+
+<section class="legal-section">
+    <div class="legal-inner">
+        <article class="legal-card">
+            <h2 class="legal-heading">1. Welcome to Spendly</h2>
+            <p class="legal-body">
+                By creating an account or using Spendly, you agree to these
+                Terms of Service. Please read them carefully. If you do not
+                agree, you should not use the service.
+            </p>
+
+            <h2 class="legal-heading">2. Your account</h2>
+            <p class="legal-body">
+                You are responsible for keeping your login credentials
+                confidential and for all activity that happens under your
+                account. Let us know immediately if you suspect any
+                unauthorized access.
+            </p>
+
+            <h2 class="legal-heading">3. Acceptable use</h2>
+            <p class="legal-body">
+                Use Spendly only for lawful personal finance tracking. You
+                agree not to misuse the service, attempt to disrupt it, or
+                access data that does not belong to you.
+            </p>
+
+            <h2 class="legal-heading">4. Your data</h2>
+            <p class="legal-body">
+                The expenses and notes you log belong to you. We store them
+                to make the service work for you, and we will never sell
+                your data. You can delete your account at any time.
+            </p>
+
+            <h2 class="legal-heading">5. Service availability</h2>
+            <p class="legal-body">
+                We work hard to keep Spendly running smoothly, but the
+                service is provided "as is" without warranties of any
+                kind. We may update, pause, or discontinue features when
+                needed.
+            </p>
+
+            <h2 class="legal-heading">6. Changes to these terms</h2>
+            <p class="legal-body">
+                We may update these terms occasionally. If we make
+                meaningful changes, we will notify you through the app or
+                by email. Continued use of Spendly means you accept the
+                updated terms.
+            </p>
+
+            <h2 class="legal-heading">7. Contact</h2>
+            <p class="legal-body">
+                Questions about these terms? Reach out to us at
+                <a class="legal-link" href="mailto:support@spendly.app">support@spendly.app</a>.
+            </p>
+        </article>
+
+        <div class="legal-actions">
+            <a href="{{ url_for('register') }}" class="btn-primary">I agree — create account</a>
+            <a href="{{ url_for('landing') }}" class="btn-ghost">Back to home</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
